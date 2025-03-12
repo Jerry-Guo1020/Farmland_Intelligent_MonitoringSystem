@@ -1,5 +1,4 @@
-# 农田智能监测系统
-
+#  智农慧眼•慧眼智控•农田智能监测系统  (Farmland_Intelligent_MonitoringSystem)
 ## 项目背景
 
 随着农业科技的不断发展，智能化的农业逐渐成为提升生产力、降低成本、保障农业可持续发展的重要方向。为了优化农田的管理，提升作物产量，减少资源浪费，从而来提升农业的生产力。农田智能检测系统为新农业发展提供高质量的生产效率。-
@@ -79,5 +78,7 @@
 * 邮箱：2593517388@qq.com
 
 
-* * *# Farmland_Intelligent_MonitoringSystem
-# Farmland_Intelligent_MonitoringSystem
+
+
+
+
