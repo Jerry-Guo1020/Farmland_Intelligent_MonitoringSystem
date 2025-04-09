@@ -17,11 +17,11 @@ import { Button } from "@/components/ui/button"
 
 const navigation = [
     { name: '首页', href: '#' },
-    { name: '环境数据监测', href: '#' },
-    { name: '智慧农业决策', href: '#' },
-    { name: '智慧农业管理', href: '#' },
-    { name: '智慧农业服务', href: '#' },
-    { name: '社区分享中心', href: '#' },
+    { name: '环境数据监测', href: 'checkenvironment' },
+    { name: '智慧农业决策', href: 'decision' },
+    { name: '智慧农业管理', href: 'manage' },
+    { name: '智慧农业服务', href: 'server' },
+    { name: '社区分享中心', href: 'community' },
 
 ]
 

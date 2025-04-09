@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function Example() {
     return (
-        <div className="min-h-screen overflow-y-auto select-none">
+        <div className="  overflow-y-auto select-none">
             <div className="bg-white">
                 <div>
                     <div className="relative isolate overflow-hidden bg-emerald-600 -sm:px-0 md:pt-60 lg:flex lg:gap-x-20 ">
@@ -21,12 +21,12 @@ export default function Example() {
                             </p>
                             <div className="mt-15  flex items-center justify-center gap-x-10 lg:justify-start">
                                 <a
-                                    href="#"
+                                    href="checkenvironment"
                                     className="rounded-md bg-white px-10 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                                 >
                                     开始使用
                                 </a>
-                                <a href="#" className="text-sm/6 font-semibold text-white">
+                                <a href="more" className="text-sm/6 font-semibold text-white">
                                     了解更多 
                                     <span aria-hidden="true">
                                         →</span>
