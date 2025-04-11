@@ -128,8 +128,16 @@ const Function = [
   }
 ];
 
-const Card =(
-  {title,icon,description}:{title:string,icon:JSX.Element,description:string})=>{
+const Card = ({
+  title,
+  icon,
+  description
+}: {
+  title: string,
+  icon: React.ReactNode,
+  description: string
+}) => {
+  return (
     <div>
       <div>{icon}</div>
       <div>
@@ -137,7 +145,8 @@ const Card =(
         <p>{description}</p>
       </div>
     </div>
-  }
+  );
+};
 
 
 const page = () => {
@@ -151,13 +160,13 @@ return (
   为您制造更好的使用环境，构建一个全面的农业智能监测与农业技术建议的系统。
   </p>
 
-  <div>
-    {Function.map((item,index)=> (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {Function.map((item, index) => (
       <Card 
-      key={index}
-      title={item.title}
-      icon={item.icon}
-      description={item.description}
+        key={index}
+        title={item.title}
+        icon={item.icon}
+        description={item.description}
       />
     ))}
   </div>
