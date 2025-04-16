@@ -104,27 +104,27 @@ import { title } from 'process';
 const Function = [
   {title: "环境数据监测",
     description:"集成土壤湿度、温度、光照等传感器，实时采集农田环境数据。数据将通过无线方式上传至系统，供后续分析与决策使用。",
-    icon: <Radar className='text-green-500' size={20} />,
+    icon: <Radar className='text-green-500' size={28} />,
   },
   {title: "环境数据监测",
     description:"集成土壤湿度、温度、光照等传感器，实时采集农田环境数据。数据将通过无线方式上传至系统，供后续分析与决策使用。",
-    icon: <Radar className='text-green-500' size={20} />,
+    icon: <Radar className='text-green-500' size={28} />,
   },
   {title: "环境数据监测",
     description:"集成土壤湿度、温度、光照等传感器，实时采集农田环境数据。数据将通过无线方式上传至系统，供后续分析与决策使用。",
-    icon: <Radar className='text-green-500' size={20} />,
+    icon: <Radar className='text-green-500' size={28} />,
   },
   {title: "环境数据监测",
     description:"集成土壤湿度、温度、光照等传感器，实时采集农田环境数据。数据将通过无线方式上传至系统，供后续分析与决策使用。",
-    icon: <Radar className='text-green-500' size={20} />,
+    icon: <Radar className='text-green-500' size={28} />,
   },
   {title: "环境数据监测",
     description:"集成土壤湿度、温度、光照等传感器，实时采集农田环境数据。数据将通过无线方式上传至系统，供后续分析与决策使用。",
-    icon: <Radar className='text-green-500' size={20} />,
+    icon: <Radar className='text-green-500' size={28} />,
   },
   {title: "环境数据监测",
     description:"集成土壤湿度、温度、光照等传感器，实时采集农田环境数据。数据将通过无线方式上传至系统，供后续分析与决策使用。",
-    icon: <Radar className='text-green-500' size={20} />,
+    icon: <Radar className='text-green-500' size={28} />,
   }
 ];
 
@@ -138,11 +138,12 @@ const Card = ({
   description: string
 }) => {
   return (
-    <div>
-      <div>{icon}</div>
+    
+    <div className='flex flex-col sm:flex-row items-start sm:items-center bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-200 w-full md:w-[45%] lg:w-[30%] gap-4'><div>
+     {icon}</div>
       <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <h3 className='text-xl font-bold text-orange-500 mb-1'>{title}</h3>
+        <p className='text-gray-700 text-sm leading-relaxed'>{description}</p>
       </div>
     </div>
   );
@@ -151,16 +152,16 @@ const Card = ({
 
 const page = () => {
 return (
-<div>
-  <h1>
+<div className='py-12 px-6 bg-green-50 min-h-screen '>
+  <h1 className='text-center text-3xl md:text-5xl font-bold text-center font-momo mb-6'>
   我们有哈哈哈功能
   </h1>
 
-  <p>
+  <p className='text-center text-lg md:text-xl max-w-3xl mx-auto text-gray-700 '>
   为您制造更好的使用环境，构建一个全面的农业智能监测与农业技术建议的系统。
   </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div className="mt-20 flex flex-wrap justify-center gap-10">
     {Function.map((item, index) => (
       <Card 
         key={index}
